@@ -1,0 +1,39 @@
+<div class="contents">
+  <div class="seats">
+      <div class="seat">
+        <%= form_with model:@guest, method: :post, local: true do |f| %>
+          <div class="seat-text">
+            <div class="seat">
+              <div class="seat-text">
+                人数：
+              </div>
+            </div>
+            <div class="field">
+             <%= f.collection_select(:seat_id, Seat.all, :id, :name, {}, {class:"select-box", id:"seat-num"}) %>
+            </div>            
+          </div>
+
+          <div class="box1">
+            <%= f.text_field :guest_1, placeholder: '１人目' %>
+            <%= f.text_field :guest_2, placeholder: '２人目' %>
+            <%= f.text_field :guest_3, placeholder: '３人目' %>
+            <%= f.text_field :guest_4, placeholder: '４人目' %>
+            <%= f.text_field :guest_5, placeholder: '５人目' %>
+          </div>
+
+          <div class="box2">
+            <%= f.text_field :guest_6, placeholder: '６人目' %>
+            <%= f.text_field :guest_7, placeholder: '７人目' %>
+            <%= f.text_field :guest_8, placeholder: '８人目' %>
+            <%= f.text_field :guest_9, placeholder: '９人目' %>
+            <%= f.text_field :guest_10, placeholder: '１０人目' %>
+          </div>
+
+          <div class="next">
+            <%= f.submit "席を決める"%>
+          </div> 
+
+        <% end %>
+      </div>
+  </div>
+</div>

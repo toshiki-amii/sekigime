@@ -1,0 +1,15 @@
+<div class="contents">
+
+  <div class="content">
+    <%= "席決め結果" %>
+  </div>
+  <div class="sekigime">
+    <% @guest.each do |guest| %>
+     <%= guest.guest_1 %>
+     <%= guest.guest_2 %>
+     <%= guest.guest_3 %>
+     <%= guest.guest_4 %>
+    <%end%>
+  </div>
+
+</div>

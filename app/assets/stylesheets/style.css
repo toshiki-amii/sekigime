@@ -1,47 +1,14 @@
-/* リセットCSS */
-* {
-  box-sizing: border-box;
-}
-
-html,
-body,
-ul,
-li,
-h1,
-h2,
-p,
-div {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
-  color: #3b4043;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
-a {
-  text-decoration: none;
-  color: #3b4043;
-}
-
 /* ヘッダー */
 
 .header {
+  height: 120px;
   background-color: #007032;
   margin-bottom: 48px;
   padding: 20px 0;
-
+  display: flex;
+  align-items: center;
 }
+
 .inner {
   width: 1024px;
   margin: 0 auto;
@@ -57,9 +24,15 @@ a {
 
 /* 本文　*/
 
+.main {
+  height: calc(100vh - 120px - 40px);
+}
+
 .contents{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content {
@@ -72,15 +45,28 @@ a {
   text-align: center;
 }
 
-.seats {
-  height: ;
+.seat {
   display: flex;
-  justify-content: ;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
+.seat-text {
+  min-width: 170px;
+  margin-bottom: 10px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+}
+
 
 /* フッター */
 
 .footer {
+  height: 40px ;
   background-color: #999;
   padding: 10px 0;
 }

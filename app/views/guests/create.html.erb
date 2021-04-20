@@ -3,13 +3,40 @@
   <div class="content">
     <%= "席決め結果" %>
   </div>
-  <div class="sekigime">
-    <% @guest.each do |guest| %>
-     <%= guest.guest_1 %>
-     <%= guest.guest_2 %>
-     <%= guest.guest_3 %>
-     <%= guest.guest_4 %>
-    <%end%>
+
+  <div class="item_wrapper">
+      <div class="guest">
+        <%= @guest.guest_1 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_2 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_3 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_4 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_5 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_6 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_7 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_8 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_9 %>
+      </div>
+      <div class="guest">
+        <%= @guest.guest_10 %>
+      </div>
   </div>
+
+  <%= link_to "topへ戻る", root_path %>
 
 </div>

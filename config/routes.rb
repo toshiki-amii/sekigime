@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: "guests#index"
-  resources :guests, only: [:index, :new, :create] 
+  resources :guests, only: [:index, :new, :create, :destroy] 
 end

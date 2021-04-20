@@ -11,7 +11,6 @@ class CreateGuests < ActiveRecord::Migration[6.0]
       t.string :guest_8
       t.string :guest_9
       t.string :guest_10
-      t.integer :seat_id, null: false
       t.timestamps
     end
   end

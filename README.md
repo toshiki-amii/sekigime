@@ -14,6 +14,5 @@
 | guest_8    | string  |             |
 | guest_9    | string  |             |
 | guest_10   | string  |             |
-| seat_id    | integer | null: false |
 
 

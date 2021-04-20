@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 2021_04_14_074827) do
     t.string "guest_8"
     t.string "guest_9"
     t.string "guest_10"
-    t.integer "seat_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

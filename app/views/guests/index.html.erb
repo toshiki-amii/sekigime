@@ -1,26 +1,8 @@
-<div class="main">
   <div class="contents">
     <div class ="content">
-      <%= "席を決める" %>
+      <%= "Sekigimeへようこそ！" %>
     </div>
+    <%= link_to "席を決める", new_guest_path, class:"btn" %>
   </div>
 
-  <div class="seats">
-    <div class="seat">
-      <div class="seat-text">
-      人数：
-      </div>
-      <div class="field">
-        <%= form_with model: @seat, local: true do |f| %>
-          <%= f.collection_select(:hoge, [], :hoge, :hoge, {}, {class:"select-box", id:"seat-num"}) %>
-          <div class="next">
-            <%= f.submit "次へ" , class: "next_btn" %>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
 
-  
-
-</div>

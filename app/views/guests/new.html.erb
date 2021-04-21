@@ -1,0 +1,35 @@
+<div class="contents">
+  <div class="content">
+    <%= "名前を入力してください" %>
+  </div>
+</div>
+<div class="seats">
+  <%= form_with model:@guest, method: :post, local: true do |f| %> 
+
+    <div class="seat">
+      <%= f.text_field :guest_1, placeholder: '１人目', class:"box" %>
+      <%= f.text_field :guest_2, placeholder: '２人目', class:"box" %>
+    </div>
+    <div class="seat">
+      <%= f.text_field :guest_3, placeholder: '３人目', class:"box" %>
+      <%= f.text_field :guest_4, placeholder: '４人目', class:"box" %>
+    </div>
+    <div class="seat">
+      <%= f.text_field :guest_5, placeholder: '５人目', class:"box" %>
+      <%= f.text_field :guest_6, placeholder: '６人目', class:"box" %>
+    </div>
+    <div class="seat">
+      <%= f.text_field :guest_7, placeholder: '７人目', class:"box" %>
+      <%= f.text_field :guest_8, placeholder: '８人目', class:"box" %>
+    </div>
+    <div class="seat">
+      <%= f.text_field :guest_9, placeholder: '９人目', class:"box" %>
+      <%= f.text_field :guest_10, placeholder: '１０人目', class:"box" %>
+    </div>
+
+    <div class="submit">
+      <%= f.submit "席を決める", class:"btn"%>
+    </div> 
+
+  <% end %>
+</div>

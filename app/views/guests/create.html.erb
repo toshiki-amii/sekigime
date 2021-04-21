@@ -1,42 +1,58 @@
 <div class="contents">
-
   <div class="content">
     <%= "席決め結果" %>
   </div>
-
   <div class="item_wrapper">
+    <% if @guest.guest_1.present? %>
       <div class="guest">
         <%= @guest.guest_1 %>
       </div>
+    <%end%>
+    <% if @guest.guest_2.present? %>
       <div class="guest">
         <%= @guest.guest_2 %>
       </div>
+    <%end%>
+    <% if @guest.guest_3.present? %>
       <div class="guest">
         <%= @guest.guest_3 %>
       </div>
+    <%end%>
+    <% if @guest.guest_4.present? %>
       <div class="guest">
         <%= @guest.guest_4 %>
       </div>
+    <%end%>
+    <% if @guest.guest_5.present? %>
       <div class="guest">
         <%= @guest.guest_5 %>
       </div>
+    <%end%>
+    <% if @guest.guest_6.present? %>
       <div class="guest">
         <%= @guest.guest_6 %>
       </div>
+    <%end%>
+    <% if @guest.guest_7.present? %>
       <div class="guest">
         <%= @guest.guest_7 %>
       </div>
+    <%end%>
+    <% if @guest.guest_8.present? %>
       <div class="guest">
         <%= @guest.guest_8 %>
       </div>
+    <%end%>
+    <% if @guest.guest_9.present? %>
       <div class="guest">
         <%= @guest.guest_9 %>
       </div>
+    <%end%>
+    <% if @guest.guest_10.present? %>
       <div class="guest">
         <%= @guest.guest_10 %>
       </div>
+    <%end%>
   </div>
-
   <%= link_to "topへ戻る", root_path %>
-
 </div>

@@ -35,8 +35,6 @@
   background-color: #DFFDFF;
   padding-top: 48px;
   overflow: scroll;
-  background-image: url(background.jpg);
-  background-size: cover;
 }
 
 .contents{

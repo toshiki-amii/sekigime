@@ -42,6 +42,41 @@ https://sekigime-35011.herokuapp.com/
     ・それぞれにゲストの名前を入力
     ・入力された内容を2列でランダムに配置
  
+# Development_environment
+
+## バックエンド
+
+Ruby, Ruby on Rails
+
+## フロントエンド
+
+HTML, JavaScript, JQuery
+
+## データベース
+
+MySQL, SequelPro
+
+## Webサーバー
+
+Heroku
+
+## アプリケーションサーバー
+
+Puma
+
+## ソース管理
+
+GitHub, GitHubDesktop
+
+## エディタ
+
+VSCode
+
+# Plan
+
+* モバイル端末での利用のしやすさを改善
+* 指定したゲストの席を固定しその他のゲストの席をランダムに配置する
+* 指定の組み合わせを固定し席をランダムに配置する
 
 # DB_Design
 
@@ -62,4 +97,18 @@ https://sekigime-35011.herokuapp.com/
 
 # Usage
 
+* ruby 2.6.5
+* rails 6.0.0
+* mysql 0.4.4
+
+```ruby
+% git clone https://github.com/toshiki-amii/sekigime.git
+% cd sekigime
+% bundle install
+% yarn install
+% rails db:create
+% rails db:migrate
+% rails s
+```
+→ http://localhost:3000
 
